@@ -12,7 +12,7 @@ def selection(arr):
     for i in range(l-1):
         # mn = min(arr[i:])
         #mn_ind = arr.index(mn,i) #to make code run for duplicate values , i will specify from where to start finding
-        mn_ind = i
+        mn_ind = i  #iterative method to find minimum value
         for j in range(mn_ind+1,l):
             if arr[j]<arr[mn_ind]:
                 mn_ind = j
