@@ -45,8 +45,8 @@ def pivot_place(arr,left,right):
         else:
             arr[l],arr[r] = arr[r],arr[l]
     return r #returning the pivot index
-
-def quicksort(arr,left,right):
+#avg tc -O(NlogN)
+def quicksort(arr,left,right): #worst case TC- O(N^2) when we take the max or min value as pivot ,or the array is already sorted in asc or desc
     if left<right: #till both are not pointing to the same value
         p= pivot_place(arr,left,right)
         quicksort(arr,left,p-1)
